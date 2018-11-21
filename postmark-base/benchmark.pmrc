@@ -1,5 +1,11 @@
-set transactions 2500
-set size 5120 524288
+set transactions 250000
+set seed 12
+set size 51200 51200
 set number 500
+set write 512
+set read 512
+set buffering false
+set bias read 5
+set bias create 5
 run
 quit
