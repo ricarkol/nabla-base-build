@@ -1,0 +1,120 @@
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	83 seconds total
+	83 seconds of transactions (60240 per second)
+
+Files:
+	2505221 created (30183 per second)
+		Creation alone: 5000 files (5000 per second)
+		Mixed with transactions: 2500221 files (30123 per second)
+	2501248 read (30135 per second)
+	0 appended (0 per second)
+	2505221 deleted (30183 per second)
+		Deletion alone: 5442 files (5442 per second)
+		Mixed with transactions: 2499779 files (30117 per second)
+
+Data:
+	2427.17 megabytes read (29.24 megabytes per second)
+	2431.05 megabytes written (29.29 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	82 seconds total
+	82 seconds of transactions (60975 per second)
+
+Files:
+	2505221 created (30551 per second)
+		Creation alone: 5000 files (5000 per second)
+		Mixed with transactions: 2500221 files (30490 per second)
+	2501248 read (30503 per second)
+	0 appended (0 per second)
+	2505221 deleted (30551 per second)
+		Deletion alone: 5442 files (5442 per second)
+		Mixed with transactions: 2499779 files (30485 per second)
+
+Data:
+	2427.17 megabytes read (29.60 megabytes per second)
+	2431.05 megabytes written (29.65 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	82 seconds total
+	82 seconds of transactions (60975 per second)
+
+Files:
+	2505221 created (30551 per second)
+		Creation alone: 5000 files (5000 per second)
+		Mixed with transactions: 2500221 files (30490 per second)
+	2501248 read (30503 per second)
+	0 appended (0 per second)
+	2505221 deleted (30551 per second)
+		Deletion alone: 5442 files (5442 per second)
+		Mixed with transactions: 2499779 files (30485 per second)
+
+Data:
+	2427.17 megabytes read (29.60 megabytes per second)
+	2431.05 megabytes written (29.65 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	82 seconds total
+	82 seconds of transactions (60975 per second)
+
+Files:
+	2505221 created (30551 per second)
+		Creation alone: 5000 files (5000 per second)
+		Mixed with transactions: 2500221 files (30490 per second)
+	2501248 read (30503 per second)
+	0 appended (0 per second)
+	2505221 deleted (30551 per second)
+		Deletion alone: 5442 files (5442 per second)
+		Mixed with transactions: 2499779 files (30485 per second)
+
+Data:
+	2427.17 megabytes read (29.60 megabytes per second)
+	2431.05 megabytes written (29.65 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	83 seconds total
+	83 seconds of transactions (60240 per second)
+
+Files:
+	2505221 created (30183 per second)
+		Creation alone: 5000 files (5000 per second)
+		Mixed with transactions: 2500221 files (30123 per second)
+	2501248 read (30135 per second)
+	0 appended (0 per second)
+	2505221 deleted (30183 per second)
+		Deletion alone: 5442 files (5442 per second)
+		Mixed with transactions: 2499779 files (30117 per second)
+
+Data:
+	2427.17 megabytes read (29.24 megabytes per second)
+	2431.05 megabytes written (29.29 megabytes per second)
