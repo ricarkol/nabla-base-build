@@ -1,0 +1,1 @@
+- number of subdirectories is affecting LFS performance. Too many files per directory is bad for LFS.
