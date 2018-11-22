@@ -8,8 +8,8 @@
 	branch = solo5
 [submodule "solo5"]
 	path = solo5
-	url = https://github.com/nabla-containers/solo5
-	branch = ukvm-linux-seccomp
+	url = https://github.com/ricarkol/solo5.git
+	branch = ukvm-linux-seccomp-fs
 [submodule "gorump"]
 	path = gorump
 	url = https://github.com/nabla-containers/gorump
