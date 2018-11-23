@@ -1,3 +1,7 @@
+
+# Example:
+# bash -x run_perf.sh docker-btrfs large /
+
 name=$1
 workload=$2
 location=$3
@@ -7,7 +11,7 @@ mkdir -p data
 echo "set location ${location}" > /tmp/pm.location
 cat /tmp/pm.location benchmark.${workload} > /tmp/pm.config
 
-for i in `seq 1 2`
+for i in `seq 1 5`
 do
 	ts=$(date +%s%N)
 	time ./postmark.linux /tmp/pm.config >> data/postmark.${workload}.${name}.out
