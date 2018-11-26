@@ -101,6 +101,7 @@ extern int cli_set_bias_create();
 extern int cli_set_report();
 
 extern int cli_run();
+extern int cli_prepare();
 extern int cli_load();
 extern int cli_show();
 extern int cli_help();
@@ -122,6 +123,7 @@ cmd command_list[]={ /* table of CLI commands */
       "Sets the chance of choosing create over delete"},
    {"set report",cli_set_report,"Choose verbose or terse report format"},
    {"run",cli_run,"Runs one iteration of benchmark"},
+   {"prepare",cli_prepare,"Just set the files (don't run the benchmark)"},
    {"load",cli_load,"Read configuration file"},
    {"show",cli_show,"Displays current configuration"},
    {"help",cli_help,"Prints out available commands"},
@@ -670,8 +672,9 @@ char *dest;
 }
 
 /* creates new file of specified length and fills it with data */
-void create_file(buffered)
+void create_file(buffered, fill_it)
 int buffered; /* 1=buffered I/O (default), 0=unbuffered I/O */
+int fill_it; /* 1=fill it with data, 0=don't */
 {
    FILE *fp=NULL;
    int fd=-1;
@@ -684,10 +687,17 @@ int buffered; /* 1=buffered I/O (default), 0=unbuffered I/O */
       file_table[free_file].size=
          file_size_low+RND(file_size_high-file_size_low);
 
+      if( access( file_table[free_file].name, F_OK ) != -1 )
+         {
+            /* file exists */
+	    //printf("file exists %s\n", file_table[free_file].name);
+            return;
+         }
+
       if (buffered)
-         fp=fopen(file_table[free_file].name,"w");
+         fp=fopen(file_table[free_file].name,"a+");
       else
-         fd=open(file_table[free_file].name,O_RDWR|O_CREAT,0644);
+         fd=open(file_table[free_file].name,O_RDWR|O_CREAT|O_APPEND,0644);
 
       if (fp || fd!=-1)
          {
@@ -849,7 +859,7 @@ int buffered; /* 1=buffered I/O (default), 0=unbuffered I/O */
       if (bias_create!=-1) /* if create/delete not locked out... */
          {
          if (RND(10)<bias_create) /* create file */
-            create_file(buffered);
+            create_file(buffered, 1);
          else /* delete file */
             delete_file(find_used_file());
          }
@@ -940,6 +950,86 @@ int subdirs;
       }
 }
 
+/* CLI callback for 'prepare' - just create the files */
+int cli_prepare(param) /* none */
+char *param; /* unused */
+{
+   time_t start_time,t_start_time,t_end_time,end_time; /* elapsed timers */
+   int delete_base; /* snapshot of deleted files counter */
+   FILE *fp=NULL; /* file descriptor for directing output */
+   int incomplete;
+   int i; /* generic iterator */
+
+   reset_counters(); /* reset counters before each run */
+
+   sgenrand(seed); /* initialize random number generator */
+
+   /* allocate file space and fill with junk */
+   file_source=initialize_file_source(file_size_high<<1);
+
+   /* allocate read buffer */
+   read_buffer=(char *)malloc(read_block_size);
+
+   /* allocate table of files at 2 x simultaneous files */
+   file_allocated=0;
+   if ((file_table=(file_entry *)calloc(simultaneous<<1,sizeof(file_entry)))==
+      NULL)
+      fprintf(stderr,"Error: Failed to allocate table for %d files\n",
+         simultaneous<<1);
+
+   if (file_system_count>0)
+      location_index=build_location_index(file_systems,file_system_weight);
+
+   /* create subdirectories if necessary */
+   if (subdirectories>1)
+      {
+      printf("Creating subdirectories...");
+      fflush(stdout);
+      create_subdirectories(file_systems,NULL,subdirectories);
+      printf("Done\n");
+      }
+
+   time(&start_time); /* store start time */
+
+   /* create files in specified directory until simultaneous number */
+   printf("Creating files...");
+   fflush(stdout);
+   for (i=0; i<simultaneous; i++)
+      create_file(buffered_io, 1);
+   printf("Done\n");
+  
+   /* print end time and difference, transaction numbers */
+   time(&end_time);
+
+   if (location_index)
+      {
+      free(location_index);
+      location_index=NULL;
+      }
+
+   if (param)
+      if ((fp=fopen(param,"a"))==NULL)
+         fprintf(stderr,"Error: Cannot direct output to file '%s'\n",param);
+
+   if (!fp)
+      fp=stdout;
+
+   if (!incomplete)
+      reports[report](fp,end_time,start_time,t_end_time,t_start_time,
+         files_deleted-delete_base);
+
+   if (param && fp!=stdout)
+      fclose(fp);
+
+   /* free resources allocated for this run */
+   free(file_table);
+   free(read_buffer);
+   free(file_source);
+
+   return(1); /* return 1 unless exit requested, then return 0 */
+}
+
+
 /* CLI callback for 'run' - benchmark execution loop */
 int cli_run(param) /* none */
 char *param; /* unused */
@@ -985,7 +1075,7 @@ char *param; /* unused */
    printf("Creating files...");
    fflush(stdout);
    for (i=0; i<simultaneous; i++)
-      create_file(buffered_io);
+      create_file(buffered_io, 0);
    printf("Done\n");
   
    printf("Performing transactions");
@@ -997,17 +1087,20 @@ char *param; /* unused */
       printf("Done\n");
 
    /* delete remaining files */
+/*
    printf("Deleting files...");
    fflush(stdout);
    delete_base=files_deleted;
    for (i=0; i<simultaneous<<1; i++)
       delete_file(i);
    printf("Done\n");
+*/
 
    /* print end time and difference, transaction numbers */
    time(&end_time);
 
    /* delete previously created subdirectories */
+/*
    if (subdirectories>1)
       {
       printf("Deleting subdirectories...");
@@ -1015,6 +1108,7 @@ char *param; /* unused */
       delete_subdirectories(file_systems,NULL,subdirectories);
       printf("Done\n");
       }
+*/
 
    if (location_index)
       {
