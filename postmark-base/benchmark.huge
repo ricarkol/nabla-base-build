@@ -1,13 +1,12 @@
-set transactions 50000
+set transactions 10000
 set seed 12
-set size 101200 101200
-set number 500
+set size 1012000 1012000
+set number 100
 set write 512
 set read 512
 set buffering false
 set bias read 5
 set bias create 5
 set subdirectories 100
-show
 run
 quit
