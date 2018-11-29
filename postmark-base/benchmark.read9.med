@@ -1,0 +1,12 @@
+set location /data
+set transactions 100000
+set seed 12
+set size 4096 65536
+set number 1000
+set write 4096
+set read 4096
+set buffering false
+set bias read 9
+set bias create 10
+run
+quit
