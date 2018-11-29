@@ -1,10 +1,10 @@
 set location /data
 set transactions 100000
 set seed 12
-set size 4096 32768
+set size 512 32768
 set number 1000
-set write 4096
-set read 4096
+set write 512
+set read 512
 set buffering false
 set bias read 5
 set bias create 10
