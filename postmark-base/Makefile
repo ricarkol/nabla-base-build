@@ -38,7 +38,8 @@ postmark.rump: postmark-1.51.c
 		rumprun-bake hw_virtio postmark.rump postmark
 
 run_postmark.rump: postmark.rump
-	source ~/research/rumprun/obj/config-PATH.sh && rumprun qemu -i -M 512 -b `pwd`/log.lfs,/mnt postmark.rump
+	source ~/research/rumprun/obj/config-PATH.sh && \
+		rumprun kvm -i -g '-curses' -M 1024 -b log.lfs,/data postmark.rump benchmark.1
 
 postmark.nabla: postmark-1.51.c
 	source $(RUMPRUN)/obj/config-PATH.sh && \
