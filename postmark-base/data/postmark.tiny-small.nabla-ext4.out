@@ -25,7 +25,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 46:50:a4:42:86:ee
+ukvmif0: Ethernet address da:c2:1c:4b:5f:bf
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -34,7 +34,18 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/data/benchmark.pmrc'
+Reading configuration from file '/data/benchmark.tiny-small'
+Current configuration is:
+The base number of files is 10000
+Transactions: 1000000
+Files range between 1012 bytes and 9.88 kilobytes in size
+Working directory: /
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
 Creating subdirectories...Done
 Creating files...Done
 Performing transactions..........Done
@@ -42,21 +53,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (50000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	25498 created (25498 per second)
-		Creation alone: 500 files (500 per second)
-		Mixed with transactions: 24998 files (24998 per second)
-	25230 read (25230 per second)
-	0 appended (0 per second)
-	25498 deleted (25498 per second)
-		Deletion alone: 496 files (496 per second)
-		Mixed with transactions: 25002 files (25002 per second)
+	510155 created (510155 per second)
+		Creation alone: 10000 files (10000 per second)
+		Mixed with transactions: 500155 files (500155 per second)
+	500086 read (500086 per second)
+	494461 appended (494461 per second)
+	510155 deleted (510155 per second)
+		Deletion alone: 10310 files (10310 per second)
+		Mixed with transactions: 499845 files (499845 per second)
 
 Data:
-	2435.05 megabytes read (2435.05 megabytes per second)
-	2460.90 megabytes written (2460.90 megabytes per second)
+	3370.10 megabytes read (3370.10 megabytes per second)
+	3437.97 megabytes written (3437.97 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -97,7 +108,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 3a:be:f0:67:4b:b1
+ukvmif0: Ethernet address 3e:06:8e:60:6b:7e
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -106,7 +117,18 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/data/benchmark.pmrc'
+Reading configuration from file '/data/benchmark.tiny-small'
+Current configuration is:
+The base number of files is 10000
+Transactions: 1000000
+Files range between 1012 bytes and 9.88 kilobytes in size
+Working directory: /
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
 Creating subdirectories...Done
 Creating files...Done
 Performing transactions..........Done
@@ -114,32 +136,33 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (50000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	25498 created (25498 per second)
-		Creation alone: 500 files (500 per second)
-		Mixed with transactions: 24998 files (24998 per second)
-	25230 read (25230 per second)
-	0 appended (0 per second)
-	25498 deleted (25498 per second)
-		Deletion alone: 496 files (496 per second)
-		Mixed with transactions: 25002 files (25002 per second)
+	510155 created (510155 per second)
+		Creation alone: 10000 files (10000 per second)
+		Mixed with transactions: 500155 files (500155 per second)
+	500086 read (500086 per second)
+	494461 appended (494461 per second)
+	510155 deleted (510155 per second)
+		Deletion alone: 10310 files (10310 per second)
+		Mixed with transactions: 499845 files (499845 per second)
 
 Data:
-	2435.05 megabytes read (2435.05 megabytes per second)
-	2460.90 megabytes written (2460.90 megabytes per second)
+	3370.10 megabytes read (3370.10 megabytes per second)
+	3437.97 megabytes written (3437.97 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
 === _exit(0) called ===
 rump kernel halting...
-syncing disks... done
-unmounting file systems...
-unmounted tmpfs on /tmp type tmpfs
-unmounted /dev//dev/ld0a on /data type lfs
-unmounted rumpfs on / type rumpfs
-unmounting done
+syncing disks... lfs_updatemeta: negative bytes (segment 22 short by 8192)
+lfs_updatemeta: ino 1, lbn -12, addr = 0xb01
+lfs_updatemeta: ndupino=0
+Skipping crash dump on recursive panic
+panic: lfs_updatemeta: negative bytes
+rump kernel halting...
+PANIC: rumpuser panic
 halted
 Solo5: solo5_exit(0) called
             |      ___|
@@ -169,7 +192,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 56:a9:0e:5b:e9:e0
+ukvmif0: Ethernet address 26:8e:11:90:63:22
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -178,7 +201,18 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/data/benchmark.pmrc'
+Reading configuration from file '/data/benchmark.tiny-small'
+Current configuration is:
+The base number of files is 10000
+Transactions: 1000000
+Files range between 1012 bytes and 9.88 kilobytes in size
+Working directory: /
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
 Creating subdirectories...Done
 Creating files...Done
 Performing transactions..........Done
@@ -186,32 +220,33 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (50000 per second)
+	-1 seconds of transactions (-1000000 per second)
 
 Files:
-	25498 created (25498 per second)
-		Creation alone: 500 files (500 per second)
-		Mixed with transactions: 24998 files (24998 per second)
-	25230 read (25230 per second)
-	0 appended (0 per second)
-	25498 deleted (25498 per second)
-		Deletion alone: 496 files (496 per second)
-		Mixed with transactions: 25002 files (25002 per second)
+	510155 created (510155 per second)
+		Creation alone: 10000 files (10000 per second)
+		Mixed with transactions: 500155 files (-500155 per second)
+	500086 read (-500086 per second)
+	494461 appended (-494461 per second)
+	510155 deleted (510155 per second)
+		Deletion alone: 10310 files (10310 per second)
+		Mixed with transactions: 499845 files (-499845 per second)
 
 Data:
-	2435.05 megabytes read (2435.05 megabytes per second)
-	2460.90 megabytes written (2460.90 megabytes per second)
+	3370.10 megabytes read (3370.10 megabytes per second)
+	3437.97 megabytes written (3437.97 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
 === _exit(0) called ===
 rump kernel halting...
-syncing disks... done
-unmounting file systems...
-unmounted tmpfs on /tmp type tmpfs
-unmounted /dev//dev/ld0a on /data type lfs
-unmounted rumpfs on / type rumpfs
-unmounting done
+syncing disks... lfs_updatemeta: negative bytes (segment 22 short by 8192)
+lfs_updatemeta: ino 1, lbn -12, addr = 0xb01
+lfs_updatemeta: ndupino=0
+Skipping crash dump on recursive panic
+panic: lfs_updatemeta: negative bytes
+rump kernel halting...
+PANIC: rumpuser panic
 halted
 Solo5: solo5_exit(0) called
             |      ___|
@@ -241,7 +276,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 16:cd:4b:58:8c:ce
+ukvmif0: Ethernet address 2e:4a:b4:06:0c:c1
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -250,7 +285,18 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/data/benchmark.pmrc'
+Reading configuration from file '/data/benchmark.tiny-small'
+Current configuration is:
+The base number of files is 10000
+Transactions: 1000000
+Files range between 1012 bytes and 9.88 kilobytes in size
+Working directory: /
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
 Creating subdirectories...Done
 Creating files...Done
 Performing transactions..........Done
@@ -258,32 +304,33 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (50000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	25498 created (25498 per second)
-		Creation alone: 500 files (500 per second)
-		Mixed with transactions: 24998 files (24998 per second)
-	25230 read (25230 per second)
-	0 appended (0 per second)
-	25498 deleted (25498 per second)
-		Deletion alone: 496 files (496 per second)
-		Mixed with transactions: 25002 files (25002 per second)
+	510155 created (510155 per second)
+		Creation alone: 10000 files (10000 per second)
+		Mixed with transactions: 500155 files (500155 per second)
+	500086 read (500086 per second)
+	494461 appended (494461 per second)
+	510155 deleted (510155 per second)
+		Deletion alone: 10310 files (10310 per second)
+		Mixed with transactions: 499845 files (499845 per second)
 
 Data:
-	2435.05 megabytes read (2435.05 megabytes per second)
-	2460.90 megabytes written (2460.90 megabytes per second)
+	3370.10 megabytes read (3370.10 megabytes per second)
+	3437.97 megabytes written (3437.97 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
 === _exit(0) called ===
 rump kernel halting...
-syncing disks... done
-unmounting file systems...
-unmounted tmpfs on /tmp type tmpfs
-unmounted /dev//dev/ld0a on /data type lfs
-unmounted rumpfs on / type rumpfs
-unmounting done
+syncing disks... lfs_updatemeta: negative bytes (segment 22 short by 8192)
+lfs_updatemeta: ino 1, lbn -12, addr = 0xb02
+lfs_updatemeta: ndupino=0
+Skipping crash dump on recursive panic
+panic: lfs_updatemeta: negative bytes
+rump kernel halting...
+PANIC: rumpuser panic
 halted
 Solo5: solo5_exit(0) called
             |      ___|
@@ -313,7 +360,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address a2:3c:07:ff:cf:6a
+ukvmif0: Ethernet address 4a:50:a7:0d:80:4b
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -322,7 +369,18 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/data/benchmark.pmrc'
+Reading configuration from file '/data/benchmark.tiny-small'
+Current configuration is:
+The base number of files is 10000
+Transactions: 1000000
+Files range between 1012 bytes and 9.88 kilobytes in size
+Working directory: /
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
 Creating subdirectories...Done
 Creating files...Done
 Performing transactions..........Done
@@ -330,31 +388,32 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (50000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	25498 created (25498 per second)
-		Creation alone: 500 files (500 per second)
-		Mixed with transactions: 24998 files (24998 per second)
-	25230 read (25230 per second)
-	0 appended (0 per second)
-	25498 deleted (25498 per second)
-		Deletion alone: 496 files (496 per second)
-		Mixed with transactions: 25002 files (25002 per second)
+	510155 created (510155 per second)
+		Creation alone: 10000 files (10000 per second)
+		Mixed with transactions: 500155 files (500155 per second)
+	500086 read (500086 per second)
+	494461 appended (494461 per second)
+	510155 deleted (510155 per second)
+		Deletion alone: 10310 files (10310 per second)
+		Mixed with transactions: 499845 files (499845 per second)
 
 Data:
-	2435.05 megabytes read (2435.05 megabytes per second)
-	2460.90 megabytes written (2460.90 megabytes per second)
+	3370.10 megabytes read (3370.10 megabytes per second)
+	3437.97 megabytes written (3437.97 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
 === _exit(0) called ===
 rump kernel halting...
-syncing disks... done
-unmounting file systems...
-unmounted tmpfs on /tmp type tmpfs
-unmounted /dev//dev/ld0a on /data type lfs
-unmounted rumpfs on / type rumpfs
-unmounting done
+syncing disks... lfs_updatemeta: negative bytes (segment 22 short by 8192)
+lfs_updatemeta: ino 1, lbn -12, addr = 0xb02
+lfs_updatemeta: ndupino=0
+Skipping crash dump on recursive panic
+panic: lfs_updatemeta: negative bytes
+rump kernel halting...
+PANIC: rumpuser panic
 halted
 Solo5: solo5_exit(0) called

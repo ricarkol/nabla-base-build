@@ -1,0 +1,72 @@
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	588 seconds total
+	586 seconds of transactions (1706 per second)
+
+Files:
+	501125 created (852 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (853 per second)
+	500070 read (853 per second)
+	0 appended (0 per second)
+	501125 deleted (852 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (851 per second)
+
+Data:
+	4857.67 megabytes read (8.26 megabytes per second)
+	4867.98 megabytes written (8.28 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	588 seconds total
+	588 seconds of transactions (1700 per second)
+
+Files:
+	501125 created (852 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (850 per second)
+	500070 read (850 per second)
+	0 appended (0 per second)
+	501125 deleted (852 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (849 per second)
+
+Data:
+	4857.67 megabytes read (8.26 megabytes per second)
+	4867.98 megabytes written (8.28 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	587 seconds total
+	587 seconds of transactions (1703 per second)
+
+Files:
+	501125 created (853 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (852 per second)
+	500070 read (851 per second)
+	0 appended (0 per second)
+	501125 deleted (853 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (850 per second)
+
+Data:
+	4857.67 megabytes read (8.28 megabytes per second)
+	4867.98 megabytes written (8.29 megabytes per second)

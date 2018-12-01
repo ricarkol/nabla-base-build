@@ -25,7 +25,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 42:36:6c:fd:cf:4e
+ukvmif0: Ethernet address 9e:0a:42:43:8a:ed
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -42,21 +42,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (5000000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	2505221 created (2505221 per second)
-		Creation alone: 5000 files (5000 per second)
-		Mixed with transactions: 2500221 files (2500221 per second)
-	2501248 read (2501248 per second)
+	501125 created (501125 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (500125 per second)
+	500070 read (500070 per second)
 	0 appended (0 per second)
-	2505221 deleted (2505221 per second)
-		Deletion alone: 5442 files (5442 per second)
-		Mixed with transactions: 2499779 files (2499779 per second)
+	501125 deleted (501125 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (499223 per second)
 
 Data:
-	2427.17 megabytes read (2427.17 megabytes per second)
-	2431.05 megabytes written (2431.05 megabytes per second)
+	4857.67 megabytes read (4857.67 megabytes per second)
+	4867.98 megabytes written (4867.98 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -97,7 +97,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address f6:e8:72:b7:61:27
+ukvmif0: Ethernet address aa:86:1c:20:c1:d9
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -114,21 +114,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (5000000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	2505221 created (2505221 per second)
-		Creation alone: 5000 files (5000 per second)
-		Mixed with transactions: 2500221 files (2500221 per second)
-	2501248 read (2501248 per second)
+	501125 created (501125 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (500125 per second)
+	500070 read (500070 per second)
 	0 appended (0 per second)
-	2505221 deleted (2505221 per second)
-		Deletion alone: 5442 files (-5442 per second)
-		Mixed with transactions: 2499779 files (2499779 per second)
+	501125 deleted (501125 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (499223 per second)
 
 Data:
-	2427.17 megabytes read (2427.17 megabytes per second)
-	2431.05 megabytes written (2431.05 megabytes per second)
+	4857.67 megabytes read (4857.67 megabytes per second)
+	4867.98 megabytes written (4867.98 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -169,7 +169,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address ca:ba:86:f3:28:11
+ukvmif0: Ethernet address c2:d3:71:c5:72:e2
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -186,21 +186,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (5000000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	2505221 created (2505221 per second)
-		Creation alone: 5000 files (5000 per second)
-		Mixed with transactions: 2500221 files (2500221 per second)
-	2501248 read (2501248 per second)
+	501125 created (501125 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (500125 per second)
+	500070 read (500070 per second)
 	0 appended (0 per second)
-	2505221 deleted (2505221 per second)
-		Deletion alone: 5442 files (5442 per second)
-		Mixed with transactions: 2499779 files (2499779 per second)
+	501125 deleted (501125 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (499223 per second)
 
 Data:
-	2427.17 megabytes read (2427.17 megabytes per second)
-	2431.05 megabytes written (2431.05 megabytes per second)
+	4857.67 megabytes read (4857.67 megabytes per second)
+	4867.98 megabytes written (4867.98 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -241,7 +241,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address e2:d4:7d:3a:83:f7
+ukvmif0: Ethernet address 16:a2:59:85:9f:88
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -258,21 +258,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (5000000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	2505221 created (2505221 per second)
-		Creation alone: 5000 files (5000 per second)
-		Mixed with transactions: 2500221 files (2500221 per second)
-	2501248 read (2501248 per second)
+	501125 created (501125 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (500125 per second)
+	500070 read (500070 per second)
 	0 appended (0 per second)
-	2505221 deleted (2505221 per second)
-		Deletion alone: 5442 files (5442 per second)
-		Mixed with transactions: 2499779 files (2499779 per second)
+	501125 deleted (501125 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (499223 per second)
 
 Data:
-	2427.17 megabytes read (2427.17 megabytes per second)
-	2431.05 megabytes written (2431.05 megabytes per second)
+	4857.67 megabytes read (4857.67 megabytes per second)
+	4867.98 megabytes written (4867.98 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -313,7 +313,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address a6:b7:07:64:28:65
+ukvmif0: Ethernet address b6:0e:03:96:8c:04
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -330,21 +330,21 @@ Deleting files...Done
 Deleting subdirectories...Done
 Time:
 	1 seconds total
-	1 seconds of transactions (5000000 per second)
+	1 seconds of transactions (1000000 per second)
 
 Files:
-	2505221 created (2505221 per second)
-		Creation alone: 5000 files (5000 per second)
-		Mixed with transactions: 2500221 files (2500221 per second)
-	2501248 read (2501248 per second)
+	501125 created (501125 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 500125 files (500125 per second)
+	500070 read (500070 per second)
 	0 appended (0 per second)
-	2505221 deleted (2505221 per second)
-		Deletion alone: 5442 files (5442 per second)
-		Mixed with transactions: 2499779 files (2499779 per second)
+	501125 deleted (501125 per second)
+		Deletion alone: 1902 files (1902 per second)
+		Mixed with transactions: 499223 files (499223 per second)
 
 Data:
-	2427.17 megabytes read (2427.17 megabytes per second)
-	2431.05 megabytes written (2431.05 megabytes per second)
+	4857.67 megabytes read (4857.67 megabytes per second)
+	4867.98 megabytes written (4867.98 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 

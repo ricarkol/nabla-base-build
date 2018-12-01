@@ -1,0 +1,180 @@
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 9.88 kilobytes and 98.83 kilobytes in size
+Working directory: 
+	/mnt.ext4/ (weight=1)
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	118 seconds total
+	118 seconds of transactions (8474 per second)
+
+Files:
+	500590 created (4242 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 499590 files (4233 per second)
+	499603 read (4233 per second)
+	498497 appended (4224 per second)
+	500590 deleted (4242 per second)
+		Deletion alone: 1121 files (1121 per second)
+		Mixed with transactions: 499469 files (4232 per second)
+
+Data:
+	33721.56 megabytes read (285.78 megabytes per second)
+	33804.42 megabytes written (286.48 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 9.88 kilobytes and 98.83 kilobytes in size
+Working directory: 
+	/mnt.ext4/ (weight=1)
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	118 seconds total
+	118 seconds of transactions (8474 per second)
+
+Files:
+	500590 created (4242 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 499590 files (4233 per second)
+	499603 read (4233 per second)
+	498497 appended (4224 per second)
+	500590 deleted (4242 per second)
+		Deletion alone: 1121 files (1121 per second)
+		Mixed with transactions: 499469 files (4232 per second)
+
+Data:
+	33721.56 megabytes read (285.78 megabytes per second)
+	33804.42 megabytes written (286.48 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 9.88 kilobytes and 98.83 kilobytes in size
+Working directory: 
+	/mnt.ext4/ (weight=1)
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	118 seconds total
+	117 seconds of transactions (8547 per second)
+
+Files:
+	500590 created (4242 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 499590 files (4270 per second)
+	499603 read (4270 per second)
+	498497 appended (4260 per second)
+	500590 deleted (4242 per second)
+		Deletion alone: 1121 files (1121 per second)
+		Mixed with transactions: 499469 files (4268 per second)
+
+Data:
+	33721.56 megabytes read (285.78 megabytes per second)
+	33804.42 megabytes written (286.48 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 9.88 kilobytes and 98.83 kilobytes in size
+Working directory: 
+	/mnt.ext4/ (weight=1)
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	119 seconds total
+	118 seconds of transactions (8474 per second)
+
+Files:
+	500590 created (4206 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 499590 files (4233 per second)
+	499603 read (4233 per second)
+	498497 appended (4224 per second)
+	500590 deleted (4206 per second)
+		Deletion alone: 1121 files (1121 per second)
+		Mixed with transactions: 499469 files (4232 per second)
+
+Data:
+	33721.56 megabytes read (283.37 megabytes per second)
+	33804.42 megabytes written (284.07 megabytes per second)
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/tmp/pm.config'
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 9.88 kilobytes and 98.83 kilobytes in size
+Working directory: 
+	/mnt.ext4/ (weight=1)
+10 subdirectories will be used
+Block sizes are: read=512 bytes, write=512 bytes
+Biases are: read/append=5, create/delete=5
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	119 seconds total
+	119 seconds of transactions (8403 per second)
+
+Files:
+	500590 created (4206 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 499590 files (4198 per second)
+	499603 read (4198 per second)
+	498497 appended (4189 per second)
+	500590 deleted (4206 per second)
+		Deletion alone: 1121 files (1121 per second)
+		Mixed with transactions: 499469 files (4197 per second)
+
+Data:
+	33721.56 megabytes read (283.37 megabytes per second)
+	33804.42 megabytes written (284.07 megabytes per second)
