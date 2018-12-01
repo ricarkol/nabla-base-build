@@ -1,0 +1,3 @@
+FROM kollerr/postmark-experiments
+RUN mkdir /pm_data
+COPY * /pm_data/

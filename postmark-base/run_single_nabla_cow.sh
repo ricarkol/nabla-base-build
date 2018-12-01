@@ -18,7 +18,11 @@ logfile=$3
 	rm -rf ${location}/s[0-9]*
 	rm -rf ${location}/[0-9]*
 
-	echo "set location /pm_data" > ${location}/benchmark.${workload}
+	echo "set location ${location}" > ${location}/benchmark.${workload}
+	grep -v "set location" benchmark.${workload} | sed s/run/prepare/g >> ${location}/benchmark.${workload}
+	./postmark-split.linux ${location}/benchmark.${workload}
+
+	echo "set location pm_data" > ${location}/benchmark.${workload}
 	grep -v "set location" benchmark.${workload} >> ${location}/benchmark.${workload}
 
 	ts=$(date +%s%N)

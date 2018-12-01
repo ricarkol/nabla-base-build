@@ -55,6 +55,8 @@ Versions:
 #include <stdlib.h>
 #include <time.h>
 #include <fcntl.h>
+#include <unistd.h>
+
 
 #define PM_VERSION "v1.51 : 8/14/01"
 
@@ -691,9 +693,11 @@ int fill_it; /* 1=fill it with data, 0=don't */
          {
             /* file exists */
 	    //printf("file exists %s\n", file_table[free_file].name);
+	    printf("x");
             return;
          }
 
+      //printf("creating file %s\n", file_table[free_file].name);
       if (buffered)
          fp=fopen(file_table[free_file].name,"a+");
       else
@@ -718,6 +722,7 @@ int number;
 {
    if (file_table[number].size)
       {
+      //printf("delete file %s\n", file_table[number].name);
       if (remove(file_table[number].name))
          fprintf(stderr,"Error: Cannot delete '%s'\n",file_table[number].name);
       else

@@ -32,8 +32,32 @@ rumprun-packages-postmark: rumprun solo5 FORCE
 	source $(RUMPRUN)/obj/config-PATH.sh && make -C $(RUMPPKGS)/postmark all bin/postmark.seccomp
 	install -m 775 -D $(RUMPPKGS)/postmark/bin/postmark.seccomp postmark.nabla
 
-rumprun-packages-postmark-clean:
-	make -C $(RUMPPKGS)/postmark clean
+postmark.rump: postmark-1.51.c
+	source ~/research/rumprun/obj/config-PATH.sh && \
+		x86_64-rumprun-netbsd-gcc postmark-1.51.c -o postmark && \
+		rumprun-bake hw_virtio postmark.rump postmark
+
+run_postmark.rump: postmark.rump
+	source ~/research/rumprun/obj/config-PATH.sh && \
+		rumprun kvm -i -g '-curses' -M 1024 -b log.lfs,/data postmark.rump benchmark.1
+
+postmark.nabla: postmark-1.51.c
+	source $(RUMPRUN)/obj/config-PATH.sh && \
+		x86_64-rumprun-netbsd-gcc postmark-1.51.c -o postmark && \
+		rumprun-bake solo5_ukvm_seccomp postmark.nabla postmark
+
+postmark-split.nabla: postmark-split.c
+	source $(RUMPRUN)/obj/config-PATH.sh && \
+		x86_64-rumprun-netbsd-gcc postmark-split.c -o postmark-split && \
+		rumprun-bake solo5_ukvm_seccomp postmark-split.nabla postmark-split
+
+blk.nabla: blk.c
+	source $(RUMPRUN)/obj/config-PATH.sh && \
+		x86_64-rumprun-netbsd-gcc blk.c -o blk && \
+		rumprun-bake solo5_ukvm_seccomp blk.nabla blk
+
+rumprun-packages-postmark-1.51.clean:
+	rm -f postmark-split.nabla postmark.nabla postmark postmark-split
 
 build_docker: submodule_warning $(FILES) rumprun-packages-postmark
 	sudo docker build -f Dockerfile -t nabla-postmark-base .
@@ -42,4 +66,4 @@ build_docker: submodule_warning $(FILES) rumprun-packages-postmark
 clean:
 	rm -rf postmark.nabla
 
-distclean: clean rumprun-packages-postmark-clean solo5-clean rumprun-clean
+distclean: clean rumprun-packages-postmark-1.51.clean solo5-clean rumprun-clean
