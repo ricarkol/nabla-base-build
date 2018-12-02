@@ -5,7 +5,7 @@
 
 location=pm_data
 
-for workload in `ls benchmark.read*.*`
+for workload in read1.small read1.med read1.large read5.small read5.med read5.large read9.small read9.med read9.large
 do
 	mkdir -p pm_data
 	rm -rf pm_data/* # just in case
