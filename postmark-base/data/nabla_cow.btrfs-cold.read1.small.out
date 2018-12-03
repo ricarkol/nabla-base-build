@@ -1,0 +1,65 @@
+workload=read1.small
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read1.small'
+Creating files...Done
+ukvm-bin: Could not attach interface: tap100: No such file or directory
+
+real	0m0.176s
+user	0m0.000s
+sys	0m0.097s
+500000
+.18130974
+workload=read1.small
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read1.small'
+Creating files...Done
+ukvm-bin: Could not attach interface: tap100: No such file or directory
+
+real	0m0.072s
+user	0m0.005s
+sys	0m0.042s
+500000
+.07824991
+workload=read1.small
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read1.small'
+Creating files...Done
+ukvm-bin: Could not attach interface: tap100: No such file or directory
+
+real	0m0.073s
+user	0m0.007s
+sys	0m0.042s
+500000
+.07987826
+workload=read1.small
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read1.small'
+Creating files...Done
+ukvm-bin: Could not attach interface: tap100: No such file or directory
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.046s
+500000
+.07582036
+workload=read1.small
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read1.small'
+Creating files...Done
+ukvm-bin: Could not attach interface: tap100: No such file or directory
+
+real	0m0.077s
+user	0m0.000s
+sys	0m0.053s
+500000
+.08359543
