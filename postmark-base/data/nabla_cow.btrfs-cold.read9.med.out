@@ -1,8 +1,8 @@
-workload=read5.large
+workload=read9.med
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read9.med'
 Creating files...Done
             |      ___|
   __|  _ \  |  _ \ __ \
@@ -31,7 +31,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address ee:c0:5b:38:01:be
+ukvmif0: Ethernet address 26:d2:f9:9c:58:64
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -40,26 +40,26 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/pm_data/benchmark.read5.large'
+Reading configuration from file '/pm_data/benchmark.read9.med'
 Creating files...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxDone
 Performing transactions..........Done
 Time:
-	3 seconds total
-	3 seconds of transactions (6666 per second)
+	1 seconds total
+	1 seconds of transactions (100000 per second)
 
 Files:
-	2000 created (666 per second)
+	2000 created (2000 per second)
 		Creation alone: 1000 files (1000 per second)
-		Mixed with transactions: 1000 files (333 per second)
-	10046 read (3348 per second)
-	9785 appended (3261 per second)
-	2000 deleted (666 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	89830 read (89830 per second)
+	9851 appended (9851 per second)
+	2000 deleted (2000 per second)
 		Deletion alone: 0 files (0 per second)
 		Mixed with transactions: 0 files (0 per second)
 
 Data:
-	1051.91 megabytes read (350.64 megabytes per second)
-	171.82 megabytes written (57.27 megabytes per second)
+	2360.06 megabytes read (2360.06 megabytes per second)
+	42.68 megabytes written (42.68 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -74,16 +74,16 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m3.288s
-user	0m1.300s
-sys	0m1.897s
-20000
-3.29306878
-workload=read5.large
+real	0m3.323s
+user	0m2.824s
+sys	0m0.399s
+100000
+3.37839937
+workload=read9.med
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read9.med'
 Creating files...Done
             |      ___|
   __|  _ \  |  _ \ __ \
@@ -112,7 +112,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address ba:12:c5:64:22:28
+ukvmif0: Ethernet address d2:8b:9a:e7:f7:70
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -121,26 +121,26 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/pm_data/benchmark.read5.large'
+Reading configuration from file '/pm_data/benchmark.read9.med'
 Creating files...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxDone
 Performing transactions..........Done
 Time:
-	3 seconds total
-	3 seconds of transactions (6666 per second)
+	1 seconds total
+	1 seconds of transactions (100000 per second)
 
 Files:
-	2000 created (666 per second)
+	2000 created (2000 per second)
 		Creation alone: 1000 files (1000 per second)
-		Mixed with transactions: 1000 files (333 per second)
-	10046 read (3348 per second)
-	9785 appended (3261 per second)
-	2000 deleted (666 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	89830 read (89830 per second)
+	9851 appended (9851 per second)
+	2000 deleted (2000 per second)
 		Deletion alone: 0 files (0 per second)
 		Mixed with transactions: 0 files (0 per second)
 
 Data:
-	1051.91 megabytes read (350.64 megabytes per second)
-	171.82 megabytes written (57.27 megabytes per second)
+	2360.06 megabytes read (2360.06 megabytes per second)
+	42.68 megabytes written (42.68 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -155,16 +155,16 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m3.303s
-user	0m1.276s
-sys	0m1.952s
-20000
-3.34009650
-workload=read5.large
+real	0m3.584s
+user	0m2.829s
+sys	0m0.668s
+100000
+3.59448686
+workload=read9.med
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read9.med'
 Creating files...Done
             |      ___|
   __|  _ \  |  _ \ __ \
@@ -193,7 +193,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 8a:ee:cc:66:23:5b
+ukvmif0: Ethernet address ae:2e:26:22:cb:bd
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -202,26 +202,26 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/pm_data/benchmark.read5.large'
+Reading configuration from file '/pm_data/benchmark.read9.med'
 Creating files...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxDone
 Performing transactions..........Done
 Time:
-	4 seconds total
-	3 seconds of transactions (6666 per second)
+	1 seconds total
+	1 seconds of transactions (100000 per second)
 
 Files:
-	2000 created (500 per second)
+	2000 created (2000 per second)
 		Creation alone: 1000 files (1000 per second)
-		Mixed with transactions: 1000 files (333 per second)
-	10046 read (3348 per second)
-	9785 appended (3261 per second)
-	2000 deleted (500 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	89830 read (89830 per second)
+	9851 appended (9851 per second)
+	2000 deleted (2000 per second)
 		Deletion alone: 0 files (0 per second)
 		Mixed with transactions: 0 files (0 per second)
 
 Data:
-	1051.91 megabytes read (262.98 megabytes per second)
-	171.82 megabytes written (42.96 megabytes per second)
+	2360.06 megabytes read (2360.06 megabytes per second)
+	42.68 megabytes written (42.68 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -236,16 +236,16 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m3.292s
-user	0m1.176s
-sys	0m2.040s
-20000
-3.29806922
-workload=read5.large
+real	0m3.586s
+user	0m2.850s
+sys	0m0.649s
+100000
+3.61700064
+workload=read9.med
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read9.med'
 Creating files...Done
             |      ___|
   __|  _ \  |  _ \ __ \
@@ -274,7 +274,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 6a:85:b0:18:77:9f
+ukvmif0: Ethernet address 72:17:e7:ff:ea:dd
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -283,26 +283,26 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/pm_data/benchmark.read5.large'
+Reading configuration from file '/pm_data/benchmark.read9.med'
 Creating files...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxDone
 Performing transactions..........Done
 Time:
-	3 seconds total
-	3 seconds of transactions (6666 per second)
+	2 seconds total
+	1 seconds of transactions (100000 per second)
 
 Files:
-	2000 created (666 per second)
+	2000 created (1000 per second)
 		Creation alone: 1000 files (1000 per second)
-		Mixed with transactions: 1000 files (333 per second)
-	10046 read (3348 per second)
-	9785 appended (3261 per second)
-	2000 deleted (666 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	89830 read (89830 per second)
+	9851 appended (9851 per second)
+	2000 deleted (1000 per second)
 		Deletion alone: 0 files (0 per second)
 		Mixed with transactions: 0 files (0 per second)
 
 Data:
-	1051.91 megabytes read (350.64 megabytes per second)
-	171.82 megabytes written (57.27 megabytes per second)
+	2360.06 megabytes read (1180.03 megabytes per second)
+	42.68 megabytes written (21.34 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -317,16 +317,16 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m3.258s
-user	0m1.233s
-sys	0m1.938s
-20000
-3.27087714
-workload=read5.large
+real	0m3.587s
+user	0m2.835s
+sys	0m0.666s
+100000
+3.63585353
+workload=read9.med
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read9.med'
 Creating files...Done
             |      ___|
   __|  _ \  |  _ \ __ \
@@ -355,7 +355,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 82:a0:df:6b:98:56
+ukvmif0: Ethernet address 5e:d0:a2:9c:f7:b8
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -364,26 +364,26 @@ mounted tmpfs on /tmp
 === calling "bin/postmark.nabla" main() ===
 
 PostMark v1.51 : 8/14/01
-Reading configuration from file '/pm_data/benchmark.read5.large'
+Reading configuration from file '/pm_data/benchmark.read9.med'
 Creating files...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxDone
 Performing transactions..........Done
 Time:
-	3 seconds total
-	3 seconds of transactions (6666 per second)
+	1 seconds total
+	1 seconds of transactions (100000 per second)
 
 Files:
-	2000 created (666 per second)
+	2000 created (2000 per second)
 		Creation alone: 1000 files (1000 per second)
-		Mixed with transactions: 1000 files (333 per second)
-	10046 read (3348 per second)
-	9785 appended (3261 per second)
-	2000 deleted (666 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	89830 read (89830 per second)
+	9851 appended (9851 per second)
+	2000 deleted (2000 per second)
 		Deletion alone: 0 files (0 per second)
 		Mixed with transactions: 0 files (0 per second)
 
 Data:
-	1051.91 megabytes read (350.64 megabytes per second)
-	171.82 megabytes written (57.27 megabytes per second)
+	2360.06 megabytes read (2360.06 megabytes per second)
+	42.68 megabytes written (42.68 megabytes per second)
 
 === main() of "bin/postmark.nabla" returned 0 ===
 
@@ -398,8 +398,8 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m3.327s
-user	0m1.229s
-sys	0m1.975s
-20000
-3.35476393
+real	0m3.607s
+user	0m2.853s
+sys	0m0.668s
+100000
+3.63948521
