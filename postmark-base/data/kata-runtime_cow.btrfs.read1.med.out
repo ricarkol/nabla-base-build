@@ -1,0 +1,11 @@
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+time="2018-12-01T23:28:12-06:00" level=error msg="error waiting for container: context canceled"
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
+docker: Error response from daemon: OCI runtime create failed: qemu-lite-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory: unknown.
