@@ -1,0 +1,440 @@
+workload=read9.large
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+regular file (5): benchmark.read5.small
+regular file (6): benchmark.read1.med
+regular file (7): benchmark.read5.large
+regular file (8): benchmark.read1.large
+regular file (9): benchmark.read9.small
+regular file (10): benchmark.read9.med
+regular file (11): benchmark.read9.large
+regular file (12): benchmark.read5.med
+regular file (13): benchmark.read1.small
+ukvm-bin.seccomp: postmark-split.nabla: Warning: phdr[0] requests WRITE and EXEC permissions
+            |      ___|
+  __|  _ \  |  _ \ __ \
+\__ \ (   | | (   |  ) |
+____/\___/ _|\___/____/
+Solo5: Memory map: 1024 MB addressable:
+Solo5:     unused @ (0x0 - 0xfffff)
+Solo5:       text @ (0x100000 - 0x2f0673)
+Solo5:     rodata @ (0x2f0674 - 0x33725f)
+Solo5:       data @ (0x337260 - 0x404c27)
+Solo5:       heap >= 0x405000 < stack < 0x40000000
+rump kernel bare metal bootstrap
+
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.34 (RUMP-ROAST)
+total memory = 509 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu0 at thinair0: rump virtual cpu
+root file system type: rumpfs
+kern.module.path=/stand/amd64/7.99.34/modules
+mainbus0 (root)
+timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
+ukvmif0: Ethernet address ee:ba:65:a2:a6:50
+/dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
+WARNING: the log-structured file system is experimental
+WARNING: it may cause system crashes and/or corrupt data
+mounted tmpfs on /tmp
+
+=== calling "bin/postmark.nabla" main() ===
+
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/pm_data/benchmark.read9.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	2 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (1000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	17964 read (17964 per second)
+	2035 appended (2035 per second)
+	2000 deleted (1000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1465.61 megabytes read (732.80 megabytes per second)
+	183.62 megabytes written (91.81 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.399s
+user	0m1.074s
+sys	0m0.257s
+20000
+1.40037688
+workload=read9.large
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+regular file (5): benchmark.read5.small
+regular file (6): benchmark.read1.med
+regular file (7): benchmark.read5.large
+regular file (8): benchmark.read1.large
+regular file (9): benchmark.read9.small
+regular file (10): benchmark.read9.med
+regular file (11): benchmark.read9.large
+regular file (12): benchmark.read5.med
+regular file (13): benchmark.read1.small
+ukvm-bin.seccomp: postmark-split.nabla: Warning: phdr[0] requests WRITE and EXEC permissions
+            |      ___|
+  __|  _ \  |  _ \ __ \
+\__ \ (   | | (   |  ) |
+____/\___/ _|\___/____/
+Solo5: Memory map: 1024 MB addressable:
+Solo5:     unused @ (0x0 - 0xfffff)
+Solo5:       text @ (0x100000 - 0x2f0673)
+Solo5:     rodata @ (0x2f0674 - 0x33725f)
+Solo5:       data @ (0x337260 - 0x404c27)
+Solo5:       heap >= 0x405000 < stack < 0x40000000
+rump kernel bare metal bootstrap
+
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.34 (RUMP-ROAST)
+total memory = 509 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu0 at thinair0: rump virtual cpu
+root file system type: rumpfs
+kern.module.path=/stand/amd64/7.99.34/modules
+mainbus0 (root)
+timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
+ukvmif0: Ethernet address 4a:88:69:3a:a5:5d
+/dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
+WARNING: the log-structured file system is experimental
+WARNING: it may cause system crashes and/or corrupt data
+mounted tmpfs on /tmp
+
+=== calling "bin/postmark.nabla" main() ===
+
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/pm_data/benchmark.read9.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	17964 read (17964 per second)
+	2035 appended (2035 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1465.61 megabytes read (1465.61 megabytes per second)
+	183.62 megabytes written (183.62 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.393s
+user	0m1.080s
+sys	0m0.244s
+20000
+1.39428540
+workload=read9.large
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+regular file (5): benchmark.read5.small
+regular file (6): benchmark.read1.med
+regular file (7): benchmark.read5.large
+regular file (8): benchmark.read1.large
+regular file (9): benchmark.read9.small
+regular file (10): benchmark.read9.med
+regular file (11): benchmark.read9.large
+regular file (12): benchmark.read5.med
+regular file (13): benchmark.read1.small
+ukvm-bin.seccomp: postmark-split.nabla: Warning: phdr[0] requests WRITE and EXEC permissions
+            |      ___|
+  __|  _ \  |  _ \ __ \
+\__ \ (   | | (   |  ) |
+____/\___/ _|\___/____/
+Solo5: Memory map: 1024 MB addressable:
+Solo5:     unused @ (0x0 - 0xfffff)
+Solo5:       text @ (0x100000 - 0x2f0673)
+Solo5:     rodata @ (0x2f0674 - 0x33725f)
+Solo5:       data @ (0x337260 - 0x404c27)
+Solo5:       heap >= 0x405000 < stack < 0x40000000
+rump kernel bare metal bootstrap
+
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.34 (RUMP-ROAST)
+total memory = 509 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu0 at thinair0: rump virtual cpu
+root file system type: rumpfs
+kern.module.path=/stand/amd64/7.99.34/modules
+mainbus0 (root)
+timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
+ukvmif0: Ethernet address b6:b8:d5:09:f6:db
+/dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
+WARNING: the log-structured file system is experimental
+WARNING: it may cause system crashes and/or corrupt data
+mounted tmpfs on /tmp
+
+=== calling "bin/postmark.nabla" main() ===
+
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/pm_data/benchmark.read9.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	17964 read (17964 per second)
+	2035 appended (2035 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1465.61 megabytes read (1465.61 megabytes per second)
+	183.62 megabytes written (183.62 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.376s
+user	0m1.107s
+sys	0m0.197s
+20000
+1.37808639
+workload=read9.large
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+regular file (5): benchmark.read5.small
+regular file (6): benchmark.read1.med
+regular file (7): benchmark.read5.large
+regular file (8): benchmark.read1.large
+regular file (9): benchmark.read9.small
+regular file (10): benchmark.read9.med
+regular file (11): benchmark.read9.large
+regular file (12): benchmark.read5.med
+regular file (13): benchmark.read1.small
+ukvm-bin.seccomp: postmark-split.nabla: Warning: phdr[0] requests WRITE and EXEC permissions
+            |      ___|
+  __|  _ \  |  _ \ __ \
+\__ \ (   | | (   |  ) |
+____/\___/ _|\___/____/
+Solo5: Memory map: 1024 MB addressable:
+Solo5:     unused @ (0x0 - 0xfffff)
+Solo5:       text @ (0x100000 - 0x2f0673)
+Solo5:     rodata @ (0x2f0674 - 0x33725f)
+Solo5:       data @ (0x337260 - 0x404c27)
+Solo5:       heap >= 0x405000 < stack < 0x40000000
+rump kernel bare metal bootstrap
+
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.34 (RUMP-ROAST)
+total memory = 509 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu0 at thinair0: rump virtual cpu
+root file system type: rumpfs
+kern.module.path=/stand/amd64/7.99.34/modules
+mainbus0 (root)
+timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
+ukvmif0: Ethernet address 9a:4b:b4:3f:c8:cb
+/dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
+WARNING: the log-structured file system is experimental
+WARNING: it may cause system crashes and/or corrupt data
+mounted tmpfs on /tmp
+
+=== calling "bin/postmark.nabla" main() ===
+
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/pm_data/benchmark.read9.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	17964 read (17964 per second)
+	2035 appended (2035 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1465.61 megabytes read (1465.61 megabytes per second)
+	183.62 megabytes written (183.62 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.362s
+user	0m1.100s
+sys	0m0.193s
+20000
+1.36335377
+workload=read9.large
+location=/var/lib/docker/pm_data
+logfile=/var/lib/docker/log.lfs
+regular file (5): benchmark.read5.small
+regular file (6): benchmark.read1.med
+regular file (7): benchmark.read5.large
+regular file (8): benchmark.read1.large
+regular file (9): benchmark.read9.small
+regular file (10): benchmark.read9.med
+regular file (11): benchmark.read9.large
+regular file (12): benchmark.read5.med
+regular file (13): benchmark.read1.small
+ukvm-bin.seccomp: postmark-split.nabla: Warning: phdr[0] requests WRITE and EXEC permissions
+            |      ___|
+  __|  _ \  |  _ \ __ \
+\__ \ (   | | (   |  ) |
+____/\___/ _|\___/____/
+Solo5: Memory map: 1024 MB addressable:
+Solo5:     unused @ (0x0 - 0xfffff)
+Solo5:       text @ (0x100000 - 0x2f0673)
+Solo5:     rodata @ (0x2f0674 - 0x33725f)
+Solo5:       data @ (0x337260 - 0x404c27)
+Solo5:       heap >= 0x405000 < stack < 0x40000000
+rump kernel bare metal bootstrap
+
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.34 (RUMP-ROAST)
+total memory = 509 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu0 at thinair0: rump virtual cpu
+root file system type: rumpfs
+kern.module.path=/stand/amd64/7.99.34/modules
+mainbus0 (root)
+timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
+ukvmif0: Ethernet address fe:d4:1c:86:85:d3
+/dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
+WARNING: the log-structured file system is experimental
+WARNING: it may cause system crashes and/or corrupt data
+mounted tmpfs on /tmp
+
+=== calling "bin/postmark.nabla" main() ===
+
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/pm_data/benchmark.read9.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	2 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (1000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	17964 read (17964 per second)
+	2035 appended (2035 per second)
+	2000 deleted (1000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1465.61 megabytes read (732.80 megabytes per second)
+	183.62 megabytes written (91.81 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.375s
+user	0m1.148s
+sys	0m0.156s
+20000
+1.37622815
