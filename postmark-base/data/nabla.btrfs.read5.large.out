@@ -28,7 +28,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address f6:35:41:48:b3:ba
+ukvmif0: Ethernet address e6:90:72:fb:09:0e
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -39,13 +39,13 @@ mounted tmpfs on /tmp
 PostMark v1.51 : 8/14/01
 Reading configuration from file '/pm_data/benchmark.read5.large'
 Creating files...Done
-Performing transactions...run_single_nabla.sh: line 32: 19844 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
+Performing transactions...run_single_nabla.sh: line 32: 25063 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
 
-real	0m0.959s
-user	0m0.623s
-sys	0m0.253s
+real	0m0.869s
+user	0m0.551s
+sys	0m0.249s
 20000
-.96226708
+.87058104
 workload=read5.large
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -76,7 +76,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 3e:9e:d7:40:19:50
+ukvmif0: Ethernet address b2:82:00:7a:ab:e0
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -87,13 +87,13 @@ mounted tmpfs on /tmp
 PostMark v1.51 : 8/14/01
 Reading configuration from file '/pm_data/benchmark.read5.large'
 Creating files...Done
-Performing transactions...run_single_nabla.sh: line 32: 19877 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
+Performing transactions...run_single_nabla.sh: line 32: 25081 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
 
-real	0m0.923s
-user	0m0.618s
-sys	0m0.255s
+real	0m0.853s
+user	0m0.523s
+sys	0m0.280s
 20000
-.92486125
+.85450158
 workload=read5.large
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -124,7 +124,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address c2:59:ea:7a:0d:2f
+ukvmif0: Ethernet address 16:3d:ba:a2:0a:1b
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -135,13 +135,13 @@ mounted tmpfs on /tmp
 PostMark v1.51 : 8/14/01
 Reading configuration from file '/pm_data/benchmark.read5.large'
 Creating files...Done
-Performing transactions...run_single_nabla.sh: line 32: 19894 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
+Performing transactions...run_single_nabla.sh: line 32: 25098 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
 
-real	0m0.901s
-user	0m0.615s
-sys	0m0.236s
+real	0m0.857s
+user	0m0.555s
+sys	0m0.252s
 20000
-.90255797
+.85834958
 workload=read5.large
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -172,7 +172,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 8a:16:30:d3:aa:b1
+ukvmif0: Ethernet address a2:dc:4e:29:bb:34
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -183,13 +183,43 @@ mounted tmpfs on /tmp
 PostMark v1.51 : 8/14/01
 Reading configuration from file '/pm_data/benchmark.read5.large'
 Creating files...Done
-Performing transactions...run_single_nabla.sh: line 32: 19911 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
 
-real	0m0.908s
-user	0m0.619s
-sys	0m0.239s
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: 0 files (0 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+
+=== main() of "bin/postmark.nabla" returned 0 ===
+
+=== _exit(0) called ===
+rump kernel halting...
+syncing disks... done
+unmounting file systems...
+unmounted tmpfs on /tmp type tmpfs
+unmounted /dev//dev/ld0a on /pm_data type lfs
+unmounted rumpfs on / type rumpfs
+unmounting done
+halted
+Solo5: solo5_exit(0) called
+
+real	0m1.802s
+user	0m1.367s
+sys	0m0.380s
 20000
-.90964622
+1.80360545
 workload=read5.large
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -220,7 +250,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 26:ca:2d:d4:23:3a
+ukvmif0: Ethernet address 46:1c:06:e3:7e:26
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -231,10 +261,10 @@ mounted tmpfs on /tmp
 PostMark v1.51 : 8/14/01
 Reading configuration from file '/pm_data/benchmark.read5.large'
 Creating files...Done
-Performing transactions...run_single_nabla.sh: line 32: 19928 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
+Performing transactions...run_single_nabla.sh: line 32: 25138 Segmentation fault      ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
 
-real	0m0.921s
-user	0m0.599s
-sys	0m0.272s
+real	0m0.881s
+user	0m0.567s
+sys	0m0.245s
 20000
-.92232177
+.88208733

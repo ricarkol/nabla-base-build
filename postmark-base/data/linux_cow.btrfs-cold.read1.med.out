@@ -19,8 +19,8 @@ Files:
 	9912 read (9912 per second)
 	19719 appended (19719 per second)
 	2000 deleted (2000 per second)
-		Deletion alone: -32580 files (-32580 per second)
-		Mixed with transactions: 32580 files (32580 per second)
+		Deletion alone: -32633 files (-32633 per second)
+		Mixed with transactions: 32633 files (32633 per second)
 
 Data:
 	303.34 megabytes read (303.34 megabytes per second)
@@ -37,11 +37,11 @@ Not using Unix buffered file I/O
 Random number generator seed is 12
 Report format is verbose.
 
-real	0m0.640s
-user	0m0.434s
-sys	0m0.203s
+real	0m0.652s
+user	0m0.435s
+sys	0m0.215s
 100000
-.64526010
+.65468742
 workload=read1.med
 location=/var/lib/docker/pm_data
 keep=
@@ -63,8 +63,8 @@ Files:
 	9912 read (9912 per second)
 	19719 appended (19719 per second)
 	2000 deleted (2000 per second)
-		Deletion alone: -32649 files (-32649 per second)
-		Mixed with transactions: 32649 files (32649 per second)
+		Deletion alone: -32750 files (-32750 per second)
+		Mixed with transactions: 32750 files (32750 per second)
 
 Data:
 	303.34 megabytes read (303.34 megabytes per second)
@@ -81,11 +81,11 @@ Not using Unix buffered file I/O
 Random number generator seed is 12
 Report format is verbose.
 
-real	0m0.641s
-user	0m0.460s
-sys	0m0.178s
+real	0m0.647s
+user	0m0.445s
+sys	0m0.199s
 100000
-.64693242
+.64953842
 workload=read1.med
 location=/var/lib/docker/pm_data
 keep=
@@ -107,8 +107,8 @@ Files:
 	9912 read (9912 per second)
 	19719 appended (19719 per second)
 	2000 deleted (2000 per second)
-		Deletion alone: -32718 files (-32718 per second)
-		Mixed with transactions: 32718 files (32718 per second)
+		Deletion alone: -32731 files (-32731 per second)
+		Mixed with transactions: 32731 files (32731 per second)
 
 Data:
 	303.34 megabytes read (303.34 megabytes per second)
@@ -125,11 +125,11 @@ Not using Unix buffered file I/O
 Random number generator seed is 12
 Report format is verbose.
 
-real	0m0.636s
-user	0m0.458s
-sys	0m0.175s
+real	0m0.646s
+user	0m0.433s
+sys	0m0.210s
 100000
-.64180083
+.64855581
 workload=read1.med
 location=/var/lib/docker/pm_data
 keep=
@@ -151,8 +151,8 @@ Files:
 	9912 read (9912 per second)
 	19719 appended (19719 per second)
 	2000 deleted (2000 per second)
-		Deletion alone: -32699 files (-32699 per second)
-		Mixed with transactions: 32699 files (32699 per second)
+		Deletion alone: -32694 files (-32694 per second)
+		Mixed with transactions: 32694 files (32694 per second)
 
 Data:
 	303.34 megabytes read (303.34 megabytes per second)
@@ -169,11 +169,11 @@ Not using Unix buffered file I/O
 Random number generator seed is 12
 Report format is verbose.
 
-real	0m0.638s
-user	0m0.439s
-sys	0m0.196s
+real	0m0.658s
+user	0m0.449s
+sys	0m0.207s
 100000
-.64356339
+.66070115
 workload=read1.med
 location=/var/lib/docker/pm_data
 keep=
@@ -195,8 +195,8 @@ Files:
 	9912 read (9912 per second)
 	19719 appended (19719 per second)
 	2000 deleted (2000 per second)
-		Deletion alone: -32726 files (-32726 per second)
-		Mixed with transactions: 32726 files (32726 per second)
+		Deletion alone: -32683 files (-32683 per second)
+		Mixed with transactions: 32683 files (32683 per second)
 
 Data:
 	303.34 megabytes read (303.34 megabytes per second)
@@ -213,8 +213,8 @@ Not using Unix buffered file I/O
 Random number generator seed is 12
 Report format is verbose.
 
-real	0m0.638s
-user	0m0.458s
-sys	0m0.177s
+real	0m0.660s
+user	0m0.411s
+sys	0m0.247s
 100000
-.64320036
+.66289267

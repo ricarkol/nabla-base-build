@@ -28,7 +28,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 4a:18:1d:16:37:e8
+ukvmif0: Ethernet address 3e:b7:48:b8:d6:16
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -71,11 +71,11 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m7.859s
-user	0m7.692s
-sys	0m0.096s
+real	0m7.879s
+user	0m7.756s
+sys	0m0.056s
 500000
-7.86048518
+7.88115899
 workload=read5.small
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -106,7 +106,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 8a:30:c9:29:8f:8d
+ukvmif0: Ethernet address 82:2f:1d:b4:02:5c
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -149,11 +149,11 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m7.839s
-user	0m7.681s
+real	0m7.929s
+user	0m7.772s
 sys	0m0.088s
 500000
-7.84093316
+7.93037922
 workload=read5.small
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -184,7 +184,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 32:8e:64:24:a3:37
+ukvmif0: Ethernet address fa:d6:a9:7f:10:92
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -227,11 +227,11 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m7.838s
-user	0m7.680s
-sys	0m0.084s
+real	0m7.763s
+user	0m7.602s
+sys	0m0.092s
 500000
-7.83931993
+7.76437320
 workload=read5.small
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -262,7 +262,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address 92:73:d8:84:5e:0a
+ukvmif0: Ethernet address 9a:1a:b3:30:db:e7
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -305,11 +305,11 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m7.818s
-user	0m7.666s
+real	0m7.778s
+user	0m7.624s
 sys	0m0.080s
 500000
-7.81942217
+7.77944858
 workload=read5.small
 location=/var/lib/docker/pm_data
 logfile=/var/lib/docker/log.lfs
@@ -340,7 +340,7 @@ root file system type: rumpfs
 kern.module.path=/stand/amd64/7.99.34/modules
 mainbus0 (root)
 timecounter: Timecounter "bmktc" frequency 1000000000 Hz quality 100
-ukvmif0: Ethernet address d6:a9:f1:dd:2e:17
+ukvmif0: Ethernet address de:de:3e:3a:1a:6f
 /dev//dev/ld0a: hostpath XENBLK_/dev/ld0a (4096 MB)
 WARNING: the log-structured file system is experimental
 WARNING: it may cause system crashes and/or corrupt data
@@ -383,8 +383,8 @@ unmounting done
 halted
 Solo5: solo5_exit(0) called
 
-real	0m7.817s
-user	0m7.664s
-sys	0m0.084s
+real	0m7.904s
+user	0m7.757s
+sys	0m0.080s
 500000
-7.81865243
+7.90595305

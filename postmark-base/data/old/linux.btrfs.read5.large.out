@@ -1,0 +1,210 @@
+workload=read5.large
+location=/var/lib/docker/pm_data
+keep=
+/var/lib/docker/pm_data/benchmark.read5.large
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: -32605 files (-32605 per second)
+		Mixed with transactions: 32605 files (32605 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 20000
+Files range between 16.00 kilobytes and 128.00 kilobytes in size
+Working directory: 
+	/var/lib/docker/pm_data (weight=1)
+Block sizes are: read=16.00 kilobytes, write=16.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m0.412s
+user	0m0.115s
+sys	0m0.294s
+20000
+.41390070
+workload=read5.large
+location=/var/lib/docker/pm_data
+keep=
+/var/lib/docker/pm_data/benchmark.read5.large
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: -32726 files (-32726 per second)
+		Mixed with transactions: 32726 files (32726 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 20000
+Files range between 16.00 kilobytes and 128.00 kilobytes in size
+Working directory: 
+	/var/lib/docker/pm_data (weight=1)
+Block sizes are: read=16.00 kilobytes, write=16.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m0.448s
+user	0m0.128s
+sys	0m0.275s
+20000
+.44965164
+workload=read5.large
+location=/var/lib/docker/pm_data
+keep=
+/var/lib/docker/pm_data/benchmark.read5.large
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: -32722 files (-32722 per second)
+		Mixed with transactions: 32722 files (32722 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 20000
+Files range between 16.00 kilobytes and 128.00 kilobytes in size
+Working directory: 
+	/var/lib/docker/pm_data (weight=1)
+Block sizes are: read=16.00 kilobytes, write=16.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m0.442s
+user	0m0.106s
+sys	0m0.300s
+20000
+.44408436
+workload=read5.large
+location=/var/lib/docker/pm_data
+keep=
+/var/lib/docker/pm_data/benchmark.read5.large
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: -32702 files (-32702 per second)
+		Mixed with transactions: 32702 files (32702 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 20000
+Files range between 16.00 kilobytes and 128.00 kilobytes in size
+Working directory: 
+	/var/lib/docker/pm_data (weight=1)
+Block sizes are: read=16.00 kilobytes, write=16.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m0.430s
+user	0m0.128s
+sys	0m0.279s
+20000
+.43148453
+workload=read5.large
+location=/var/lib/docker/pm_data
+keep=
+/var/lib/docker/pm_data/benchmark.read5.large
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/var/lib/docker/pm_data/benchmark.read5.large'
+Creating files...Done
+Performing transactions..........Done
+Time:
+	1 seconds total
+	1 seconds of transactions (20000 per second)
+
+Files:
+	2000 created (2000 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (1000 per second)
+	10046 read (10046 per second)
+	9785 appended (9785 per second)
+	2000 deleted (2000 per second)
+		Deletion alone: -32711 files (-32711 per second)
+		Mixed with transactions: 32711 files (32711 per second)
+
+Data:
+	1051.91 megabytes read (1051.91 megabytes per second)
+	241.06 megabytes written (241.06 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 20000
+Files range between 16.00 kilobytes and 128.00 kilobytes in size
+Working directory: 
+	/var/lib/docker/pm_data (weight=1)
+Block sizes are: read=16.00 kilobytes, write=16.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m0.443s
+user	0m0.083s
+sys	0m0.324s
+20000
+.44452616
