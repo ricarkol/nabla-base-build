@@ -27,12 +27,13 @@ set ylabel "Ops (1000s) per second"
 #set logscale y
 
 set title "Small"
-plot "<cat summary | grep -e 'runc' | grep -e '\.smal' | grep -e '_cow' | grep -e 'ext4-ord.' | \
+plot "<cat summary | grep -e 'runc' | grep -e '\.smal' | grep -e '_cow' | grep -e 'ext4-ord\\.' | \
 		sed s/.*read//g | sed s/.small.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
-	"<cat summary | grep -e 'nabla' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "nabla",\
-	"<cat summary | grep -e 'linux' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "linux",\
-	"<cat summary | grep -e 'runsc' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "gvisor",\
-	"<cat summary | grep -e 'kata-runtime' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "kata"
+	"<cat summary | grep -e 'nabla' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "nabla",\
+	"<cat summary | grep -e 'linux' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "device",\
+	"<cat summary | grep -e 'runsc' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "gvisor",\
+	"<cat summary | grep -e 'kata-runtime' | grep -e '\.small' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "kata"
 
 unset ylabel
 
@@ -41,12 +42,13 @@ unset ylabel
 set key maxrows 1 outside top horizontal font "Helvetica, 110" height 0
 
 set title "Medium"
-plot "<cat summary | grep -e 'runc' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord.' | \
+plot "<cat summary | grep -e 'runc' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.' | \
 		sed s/.*read//g | sed s/.med.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
-	"<cat summary | grep -e 'nabla' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "nabla",\
-	"<cat summary | grep -e 'linux' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "linux",\
-	"<cat summary | grep -e 'runsc' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "gvisor",\
-	"<cat summary | grep -e 'kata-runtime' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "kata"
+	"<cat summary | grep -e 'nabla' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "nabla",\
+	"<cat summary | grep -e 'linux' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "device",\
+	"<cat summary | grep -e 'runsc' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "gvisor",\
+	"<cat summary | grep -e 'kata-runtime' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "kata"
 
 unset key
 
@@ -54,12 +56,13 @@ unset key
 set y2label "ext4 (overlay2)"
 
 set title "Large"
-plot "<cat summary | grep -e 'runc' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord.' | \
+plot "<cat summary | grep -e 'runc' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.' | \
 		sed s/.*read//g | sed s/large.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
-	"<cat summary | grep -e 'nabla' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "nabla",\
-	"<cat summary | grep -e 'linux' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "linux",\
-	"<cat summary | grep -e 'runsc' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "gvisor",\
-	"<cat summary | grep -e 'kata-runtime' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord.'" using ($2/1):($3/1)  title "kata"
+	"<cat summary | grep -e 'nabla' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "nabla",\
+	"<cat summary | grep -e 'linux' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "device",\
+	"<cat summary | grep -e 'runsc' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "gvisor",\
+	"<cat summary | grep -e 'kata-runtime' | grep -e '\.large' | grep -e '_cow' | grep -e 'ext4-ord\\.'" using ($2/1):($3/1)  title "kata"
 
 set ylabel "Ops (1000s) per second"
 #set ytics 50
@@ -71,6 +74,7 @@ plot "<cat summary | grep -e 'runc' | grep -e '\.smal' | grep -e '_cow' | grep -
 		sed s/.*read//g | sed s/.small.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
 	"<cat summary | grep -e 'nabla' | grep -e '\.small' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "nabla",\
 	"<cat summary | grep -e 'linux' | grep -e '\.small' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.small' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "nabla devie",\
 	"<cat summary | grep -e 'runsc' | grep -e '\.small' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "gvisor",\
 	"<cat summary | grep -e 'kata-runtime' | grep -e '\.small' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "kata"
 
@@ -84,6 +88,7 @@ plot "<cat summary | grep -e 'runc' | grep -e '\.med' | grep -e '_cow' | grep -e
 		sed s/.*read//g | sed s/.med.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
 	"<cat summary | grep -e 'nabla' | grep -e '\.med' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "nabla",\
 	"<cat summary | grep -e 'linux' | grep -e '\.med' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.med' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "device",\
 	"<cat summary | grep -e 'runsc' | grep -e '\.med' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "gvisor",\
 	"<cat summary | grep -e 'kata-runtime' | grep -e '\.med' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "kata"
 
@@ -96,6 +101,7 @@ plot "<cat summary | grep -e 'runc' | grep -e '\.large' | grep -e '_cow' | grep 
 		sed s/.*read//g | sed s/large.tps//g | awk '{print $1*10,$2,$3}'" using ($2/1):($3/1):xtic(1)  title "runc",\
 	"<cat summary | grep -e 'nabla' | grep -e '\.large' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "nabla",\
 	"<cat summary | grep -e 'linux' | grep -e '\.large' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "linux",\
+	"<cat summary | grep -e 'lfs' | grep -e '\.large' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "device",\
 	"<cat summary | grep -e 'runsc' | grep -e '\.large' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "gvisor",\
 	"<cat summary | grep -e 'kata-runtime' | grep -e '\.large' | grep -e '_cow' | grep -e 'btrfs\\.'" using ($2/1):($3/1)  title "kata"
 
