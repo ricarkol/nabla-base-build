@@ -9,16 +9,18 @@ set autoscale fix
 #set lmargin 5
 #set rmargin 0
 
+set yrange[-9000:]
+
 #set multiplot layout 2,3 rowsfirst margins 1,0,0,0
 set multiplot layout 2,3 rowsfirst
 
+set grid
 set boxwidth 1
 set datafile missing '-'
 set style fill solid .75 noborder
 set style histogram errorbars gap 1.5 lw 1
 set style data histograms
 
-#set key inside top right font "Helvetica, 100" width 0.1
 
 unset key
 #set ytics 50
@@ -39,7 +41,8 @@ unset ylabel
 
 #set ytics 50
 
-set key maxrows 1 outside top horizontal font "Helvetica, 110" height 0
+#set key maxrows 1 outside top horizontal font "Helvetica, 110" height 0
+set key inside top right font "Helvetica, 100" width 0.1
 
 set title "Medium"
 plot "<cat summary | grep -e 'runc' | grep -e '\.med' | grep -e '_cow' | grep -e 'ext4-ord\\.' | \
