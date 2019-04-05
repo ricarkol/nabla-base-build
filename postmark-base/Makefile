@@ -44,7 +44,18 @@ run_postmark.rump: postmark.rump
 postmark.nabla: postmark-1.51.c
 	source $(RUMPRUN)/obj/config-PATH.sh && \
 		x86_64-rumprun-netbsd-gcc postmark-1.51.c -o postmark && \
-		rumprun-bake solo5_ukvm_seccomp postmark.nabla postmark
+		rumprun-bake solo5_ukvm_seccomp $@ postmark
+
+postmark.bin: postmark-1.51.c
+	source $(RUMPRUN)/obj/config-PATH.sh && \
+		x86_64-rumprun-netbsd-gcc postmark-1.51.c -o postmark && \
+		rumprun-bake hw_generic $@ postmark
+
+ukvm-bin.seccomp.map: ./ukvm-bin.seccomp
+	bash -c "objdump -x $< | gawk '{print \$$1, g, \$$NF}'" > $@
+
+postmark-split.nabla.map: ./postmark-split.nabla
+	bash -c "objdump -x $< | gawk '{print \$$1, g, \$$NF}'" > $@
 
 postmark-split.nabla: postmark-split.c
 	source $(RUMPRUN)/obj/config-PATH.sh && \
