@@ -1,5 +1,6 @@
 set location /data
 set transactions 100000
+set subdirectories 10
 set seed 12
 set size 4096 32768
 set number 1000
@@ -7,6 +8,6 @@ set write 4096
 set read 4096
 set buffering false
 set bias read 10
-set bias create 5
+set bias create -1
 run
 quit

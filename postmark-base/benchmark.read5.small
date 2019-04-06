@@ -1,5 +1,6 @@
 set location /data
-set transactions 500000
+set transactions 1000000
+set subdirectories 10
 set seed 12
 set size 512 4096
 set number 1000
