@@ -11,6 +11,7 @@ for workload in read1.small read1.med read1.large read5.small read5.med read5.la
 do
 	for i in `seq 1 5`
 	do
+		echo 3 > /proc/sys/vm/drop_caches
 		bash run_single_lfs.sh ${workload} ${location} ${log} \
 			2>> data/lfs.${fs}.${workload}.out \
 			>> data/lfs.${fs}.${workload}.tps

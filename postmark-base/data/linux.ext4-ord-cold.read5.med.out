@@ -1,0 +1,230 @@
+workload=read5.med
+location=/mnt.ext4/pm_data
+keep=
+/mnt.ext4/pm_data/benchmark.read5.med
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/mnt.ext4/pm_data/benchmark.read5.med'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	8 seconds total
+	8 seconds of transactions (125000 per second)
+
+Files:
+	2000 created (250 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (125 per second)
+	499442 read (62430 per second)
+	19667 appended (2458 per second)
+	2000 deleted (250 per second)
+		Deletion alone: 2000 files (2000 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	15553.29 megabytes read (1944.16 megabytes per second)
+	62.50 megabytes written (7.81 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 4.00 kilobytes and 32.00 kilobytes in size
+Working directory: 
+	/mnt.ext4/pm_data (weight=1)
+100 subdirectories will be used
+Block sizes are: read=4.00 kilobytes, write=4.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m8.358s
+user	0m4.754s
+sys	0m3.563s
+1000000
+8.39521295
+workload=read5.med
+location=/mnt.ext4/pm_data
+keep=
+/mnt.ext4/pm_data/benchmark.read5.med
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/mnt.ext4/pm_data/benchmark.read5.med'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	9 seconds total
+	8 seconds of transactions (125000 per second)
+
+Files:
+	2000 created (222 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (125 per second)
+	499442 read (62430 per second)
+	19667 appended (2458 per second)
+	2000 deleted (222 per second)
+		Deletion alone: 2000 files (2000 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	15553.29 megabytes read (1728.14 megabytes per second)
+	62.50 megabytes written (6.94 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 4.00 kilobytes and 32.00 kilobytes in size
+Working directory: 
+	/mnt.ext4/pm_data (weight=1)
+100 subdirectories will be used
+Block sizes are: read=4.00 kilobytes, write=4.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m8.363s
+user	0m4.733s
+sys	0m3.587s
+1000000
+8.41333644
+workload=read5.med
+location=/mnt.ext4/pm_data
+keep=
+/mnt.ext4/pm_data/benchmark.read5.med
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/mnt.ext4/pm_data/benchmark.read5.med'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	8 seconds total
+	8 seconds of transactions (125000 per second)
+
+Files:
+	2000 created (250 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (125 per second)
+	499442 read (62430 per second)
+	19667 appended (2458 per second)
+	2000 deleted (250 per second)
+		Deletion alone: 2000 files (2000 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	15553.29 megabytes read (1944.16 megabytes per second)
+	62.50 megabytes written (7.81 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 4.00 kilobytes and 32.00 kilobytes in size
+Working directory: 
+	/mnt.ext4/pm_data (weight=1)
+100 subdirectories will be used
+Block sizes are: read=4.00 kilobytes, write=4.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m8.359s
+user	0m4.903s
+sys	0m3.414s
+1000000
+8.42396064
+workload=read5.med
+location=/mnt.ext4/pm_data
+keep=
+/mnt.ext4/pm_data/benchmark.read5.med
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/mnt.ext4/pm_data/benchmark.read5.med'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	9 seconds total
+	9 seconds of transactions (111111 per second)
+
+Files:
+	2000 created (222 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (111 per second)
+	499442 read (55493 per second)
+	19667 appended (2185 per second)
+	2000 deleted (222 per second)
+		Deletion alone: 2000 files (2000 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	15553.29 megabytes read (1728.14 megabytes per second)
+	62.50 megabytes written (6.94 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 4.00 kilobytes and 32.00 kilobytes in size
+Working directory: 
+	/mnt.ext4/pm_data (weight=1)
+100 subdirectories will be used
+Block sizes are: read=4.00 kilobytes, write=4.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m8.328s
+user	0m4.847s
+sys	0m3.438s
+1000000
+8.39567189
+workload=read5.med
+location=/mnt.ext4/pm_data
+keep=
+/mnt.ext4/pm_data/benchmark.read5.med
+PostMark v1.51 : 8/14/01
+Reading configuration from file '/mnt.ext4/pm_data/benchmark.read5.med'
+Creating subdirectories...Done
+Creating files...Done
+Performing transactions..........Done
+Deleting files...Done
+Deleting subdirectories...Done
+Time:
+	8 seconds total
+	8 seconds of transactions (125000 per second)
+
+Files:
+	2000 created (250 per second)
+		Creation alone: 1000 files (1000 per second)
+		Mixed with transactions: 1000 files (125 per second)
+	499442 read (62430 per second)
+	19667 appended (2458 per second)
+	2000 deleted (250 per second)
+		Deletion alone: 2000 files (2000 per second)
+		Mixed with transactions: 0 files (0 per second)
+
+Data:
+	15553.29 megabytes read (1944.16 megabytes per second)
+	62.50 megabytes written (7.81 megabytes per second)
+Current configuration is:
+The base number of files is 1000
+Transactions: 1000000
+Files range between 4.00 kilobytes and 32.00 kilobytes in size
+Working directory: 
+	/mnt.ext4/pm_data (weight=1)
+100 subdirectories will be used
+Block sizes are: read=4.00 kilobytes, write=4.00 kilobytes
+Biases are: read/append=5, create/delete=10
+Not using Unix buffered file I/O
+Random number generator seed is 12
+Report format is verbose.
+
+real	0m8.320s
+user	0m4.818s
+sys	0m3.460s
+1000000
+8.36078735

@@ -29,7 +29,6 @@ keep=$4
 
 	ts=$(date +%s%N)
 	time ../solo5/tests/test_blk/ukvm-bin --dir=${location} --log=${logfile} postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
-	#time ../solo5/ukvm/ukvm-bin --dir=${location} --log=${logfile} --net=tap100 postmark-split.nabla '{"cmdline":"bin/postmark.nabla /pm_data/benchmark.'${workload}'","net":{"if":"ukvmif0","cloner":"True","type":"inet","method":"static","addr":"10.0.0.2","mask":"16"},"blk":{"source":"etfs","path":"/dev/ld0a","fstype":"blk","mountpoint":"/pm_data"}}'
 	tx=`grep transactions benchmark.${workload} | awk '{print $3}'`
 	tn=$((($(date +%s%N) - $ts)))
 	tt=`echo "scale=8; $tn/1000000000" | bc -l`
